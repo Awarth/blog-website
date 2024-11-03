@@ -45,7 +45,7 @@ function Home() {
 
   return (
     <div className="flex relative w-full flex-col justify-center items-center">
-      <div className="w-[98%] bg-[#ffffffbd] bg-opacity-65 backdrop-blur-lg rounded-md mt-2 sticky top-0 flex justify-between items-center border border-primary px-4 py-2">
+      <div className="w-[98%] bg-[#ffffffbd] bg-opacity-65 backdrop-blur-lg rounded-md mt-2 sticky top-0 flex justify-between items-center border border-[#00000080]  px-4 py-2">
         <h2 className="text-2xl">Posts</h2>
         <button
           onClick={handleAppPost}

@@ -105,6 +105,7 @@ function NewPost() {
           accept="image/*"
           className="cursor-pointer border p-1 rounded"
           onChange={handleImageChange}
+          required={true}
         />
         <button
           type="submit"
@@ -120,6 +121,7 @@ function NewPost() {
           Title
         </label>
         <input
+          required={true}
           value={formData.title}
           onChange={handleInputChange}
           type="text"
@@ -132,6 +134,7 @@ function NewPost() {
           Description
         </label>
         <textarea
+          required={true}
           value={formData.description}
           onChange={handleInputChange}
           name="description"
@@ -143,10 +146,11 @@ function NewPost() {
           Content
         </label>
         <textarea
+          required={true}
           name="content"
           value={formData.content}
           onChange={handleInputChange}
-          className="h-full p-2 border rounded"
+          className="h-full p-2 border rounded resize-none"
           placeholder="Content"
         />
       </div>
